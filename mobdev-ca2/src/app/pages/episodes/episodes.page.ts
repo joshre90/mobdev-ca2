@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ApiService } from '../../services/api.service';
+
 @Component({
   selector: 'app-episodes',
   templateUrl: './episodes.page.html',
@@ -12,13 +13,6 @@ export class EpisodesPage implements OnInit {
   constructor(private router: Router, private api: ApiService) { }
   ngOnInit() {
       this.episodes = this.api.getEpisodes();
-     // this.episodes.subscribe(data=> {
-     // console.log('mydata:', data)
-      //})
-
-     // this.episodes.subscribe(data=> {
-     // console.log('mydata:', data)
-      //})
   }
 
   openDetails(episode){
