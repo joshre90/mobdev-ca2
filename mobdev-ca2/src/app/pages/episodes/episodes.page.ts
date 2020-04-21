@@ -12,15 +12,9 @@ export class EpisodesPage implements OnInit {
   constructor(private router: Router, private api: ApiService) { }
   ngOnInit() {
       this.episodes = this.api.getEpisodes();
-<<<<<<< HEAD
      // this.episodes.subscribe(data=> {
      // console.log('mydata:', data)
       //})
-=======
-      this.episodes.subscribe(data=> {
-          console.log('mydata :',data)
-      })
->>>>>>> cfe9827c0667bc83ff8cb7c896aba60d3f9c1e12
   }
 
   openDetails(episode){
