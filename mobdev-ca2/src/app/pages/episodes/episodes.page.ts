@@ -15,6 +15,10 @@ export class EpisodesPage implements OnInit {
      // this.episodes.subscribe(data=> {
      // console.log('mydata:', data)
       //})
+
+     // this.episodes.subscribe(data=> {
+     // console.log('mydata:', data)
+      //})
   }
 
   openDetails(episode){

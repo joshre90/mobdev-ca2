@@ -10,6 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getEpisodes(){
+<<<<<<< HEAD
     return this.http.get(`https://github.com/joshre90/mobdev-ca2/blob/bcc7a17870ad542813433bd862d67f20c1142908/mobdev-ca2/src/assets/episodes.json`);
 
     //https://github.com/joshre90/mobdev-ca2/blob/bcc7a17870ad542813433bd862d67f20c1142908/mobdev-ca2/src/assets/episodes.json
@@ -17,5 +18,11 @@ export class ApiService {
   }
   getEpisode(id){
       return this.http.get(`https://github.com/joshre90/mobdev-ca2/blob/bcc7a17870ad542813433bd862d67f20c1142908/mobdev-ca2/src/assets/episodes.json${id}`);
+=======
+    return this.http.get(`https://www.breakingbadapi.com/api/episodes`);
+  }
+  getEpisode(id){
+      return this.http.get(`http://www.breakingbadapi.com/api/episodes/${id}`);
+>>>>>>> bcc7a17870ad542813433bd862d67f20c1142908
   }
 }
